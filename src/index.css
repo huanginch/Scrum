@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400&family=Tomorrow:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Tomorrow', 'Noto Sans TC', serif;
+    background: #0B0F1A;
+    color: #E0E0E0;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red text-white font-medium py-4 px-20 relative hover:bg-opacity-25 hover:drop-shadow-[4px_4px_0px_rgba(11,193,217,0.3)];
+  }
+
+  .top-left-triangle {
+    @apply border-[10px] border-t-dark1 border-l-dark1 border-r-[transparent] border-b-[transparent] absolute top-0 left-0 z-10 w-0 h-0 bg-[transparent];
+  }
+
+  .bottom-right-triangle {
+    @apply border-[10px] border-b-dark1 border-r-dark1 border-t-[transparent] border-l-[transparent] absolute bottom-0 right-0 z-10 w-0 h-0 bg-[transparent];
+  }
+
+  .dialogue-triangle-up {
+    @apply border-[10px] border-l-blue border-b-blue border-t-[transparent] border-r-[transparent] absolute
+    -top-[20px] left-0 z-10 w-0 h-0 bg-[transparent];
+  }
+
+  .inner-triangle-up {
+    @apply border-[8.2px] border-l-dark2 border-b-dark2 border-t-[transparent] border-r-[transparent] absolute -top-[6.5px] -left-[8.5px] z-[20] w-0 h-0 bg-[transparent]
+  }
+
+  .dialogue-triangle-left {
+    @apply border-[10px] border-l-[transparent] border-b-[transparent] border-t-[transparent] border-r-blue absolute top-1/2 -left-[10px] -translate-x-1/2 z-10 w-0 h-0 bg-[transparent];
+  }
+
+  .inner-triangle-left {
+    @apply border-[8.2px] border-l-[transparent] border-b-[transparent] border-t-[transparent] border-r-dark2 absolute -top-[8px] -left-[7px] z-[20] w-0 h-0 bg-[transparent]
+  }
+}
