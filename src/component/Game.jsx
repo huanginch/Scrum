@@ -8,9 +8,9 @@ class Game extends React.Component {
         super(props);
     }
 
-    completeTask = (this) => {
+    // completeTask = (this) => {
 
-    }
+    // }
 
     render() {
         if(this.props.counter === 1) {
