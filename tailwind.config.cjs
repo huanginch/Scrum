@@ -26,7 +26,7 @@ module.exports = {
         'body-m': '1.625rem',
       },
       backgroundImage: {
-        'avatar': "url('./src/assets/avatarfram.png')",
+        'avatar': "url('../src/assets/avatarfram.png')",
       }
     },
     colors: {

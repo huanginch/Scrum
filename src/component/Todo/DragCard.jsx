@@ -6,7 +6,10 @@ class DragCard extends React.Component {
         super(props);
     }
 
+    
+
     render() {
+        
         return (
             <div className="">
                 <Draggable draggableId={this.props.item.id} index={this.props.index}>
@@ -20,7 +23,6 @@ class DragCard extends React.Component {
 
                             className="mb-4"
                         >
-
                             <div className="bg-dark2 border-[1px] border-yellow py-3 px-4 ">
                                 {/* 實際上的卡片內容 */}
                                 <p className="mb-2">{this.props.item.title}</p>

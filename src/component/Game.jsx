@@ -8,10 +8,14 @@ class Game extends React.Component {
         super(props);
     }
 
+    completeTask = (this) => {
+
+    }
+
     render() {
         if(this.props.counter === 1) {
             return (
-                <div className="container flex flex-col justify-center h-screen mt-10 ">
+                <div className="container flex flex-col justify-center h-auto mt-10 ">
                     <div className="mb-2 bg-avatar bg-cover w-[166px] h-[164px] flex items-center">
                         <img src="./src/assets/avatar2.svg" alt="avatar" className="mx-auto" />
                     </div>
@@ -38,7 +42,7 @@ class Game extends React.Component {
         }
         else if(this.props.counter === 2) {
             return (
-                <div className="container flex flex-col justify-center h-screen mt-10 ">
+                <div className="container flex flex-col justify-center h-auto mt-10 ">
                     <div className="flex justify-between">
                         <div>
                             <div className="mb-2 bg-avatar bg-cover w-[166px] h-[164px] flex items-center">
@@ -58,8 +62,12 @@ class Game extends React.Component {
                     <div>
                         <Todo />
                     </div>
+                    <div className="flex items-center">
+                        <p className="mr-2">推薦工具：</p>
+                        <img src="../src/assets/Jira.png" alt="" />
+                    </div>
                     <div className="mb-10 ml-auto">
-                        <Button instruction={"完成"} addPageCounter={this.props.addPageCounter} />
+                        <Button instruction={"完成"} addPageCounter={this.props.addPageCounter} onClick={this.completeTask}/>
                     </div>
                     <div className="-ml-10">
                         <Steps counter={this.props.counter} />
